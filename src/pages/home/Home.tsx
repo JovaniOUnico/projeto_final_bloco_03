@@ -15,7 +15,7 @@ function Home() {
 
                         <div className="flex justify-around gap-4">
                             <div className="flex justify-around gap-4">
-
+                                {/* <ModalCategoria /> */}
                             </div>
                         </div>
                     </div>

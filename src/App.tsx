@@ -4,7 +4,9 @@ import './index.css'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Home from './pages/home/Home'
-
+import ListaCategorias from './components/categoria/listacategorias/ListaCategorias'
+import FormCategoria from './components/categoria/formcategoria/FormCategoria'
+import DeletarCategoria from './components/categoria/deletarcategoria/DeletarCategoria'
 
 import { ToastContainer } from 'react-toastify'
 
@@ -20,6 +22,10 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
+              <Route path="/categorias" element={<ListaCategorias />} />
+              <Route path="/categoria/nova" element={<FormCategoria />} />
+              <Route path="/editarCategoria/:id" element={<FormCategoria />} />
+              <Route path="/deletarCategoria/:id" element={<DeletarCategoria />} />
             </Routes>
           </div>
           <Footer />
