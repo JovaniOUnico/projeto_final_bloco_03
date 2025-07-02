@@ -20,6 +20,7 @@ function App() {
           <Navbar />
           <div className="min-h-[80vh]">
             <Routes>
+              {/* Todo Adicionar rotas de produtos */}
               <Route path="/" element={<Home />} />
               <Route path="/home" element={<Home />} />
               <Route path="/categorias" element={<ListaCategorias />} />
